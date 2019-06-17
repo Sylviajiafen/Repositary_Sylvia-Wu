@@ -1,6 +1,6 @@
 // Assignment 2
 // 1.
-var Pi = 3.14159
+let Pi = 3.14159  //->"Always use a constant rather than a variable unless the case you need to change the value later."
 
 //2.
 let x: Int = 10

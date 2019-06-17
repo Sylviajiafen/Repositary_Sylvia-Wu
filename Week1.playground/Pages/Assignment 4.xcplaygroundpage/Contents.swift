@@ -7,7 +7,15 @@ for numbers in lottoNumbers[3...5] {
 }
 
 // 2.
+for figure in 5...10 {
+    print(figure)
+}
 
+var results = 0
+for back in (3...5).reversed() {
+    results = back * 2
+    print(results)
+}
 
 
 // 3.
@@ -36,6 +44,9 @@ repeat {
     numberDecreasing -= 2
 } while numberDecreasing >= 6
 
+// The differences between while and repeat while:
+// While: Won't execute codes inside the while unless the while condition is matched.
+// Repeat while: At first, codes will be execute at least once, then when the condition is no more matched, it stops executing.
 
 // 5.
 var isRaining = false
