@@ -54,16 +54,17 @@ class Zoo {
     }
 }
 
+let zoo = Zoo(weeklyHot: Tiger(gender: .undefined))
+
 let tiger = Tiger(gender: .undefined)
 let elephant = Elephant(gender: .undefined)
 let horse = Horse(gender: .undefined)
 
-let zoo = Zoo(weeklyHot: Tiger(gender: .undefined))
 zoo.weeklyHot
 
 
 // 4.
-// I,ve learned structures, classes ,and methods. When learning structs and clasees, I've also learned instance to a object (struct or a class).
+// I’ve learned structures, classe‘」ㄩs ,and methods. When learning structs and clasees, I've also learned instance to a object (struct or a class).
 
 // 5.
 // Structures are similar to classes, but classes can do things which structs can't.
@@ -81,6 +82,7 @@ zoo.weeklyHot
 // In situation of creating a struct, Swift automatically creates a init method to assign values to each of the stored properties. We can also writeo ut one by ourselves.
 
 // 8.
+// 當我們在 class 或 struct 中做初始化時, init() 中可使用與 class/struct 的 property 相同之名稱, 當我們所提的名稱指的是後者之時, 必須在 property name 前加上 “self."
 
 // 9.
 // As metioned above in Q5,
@@ -92,4 +94,4 @@ Reference Type : (ex: class)
 A reference type, on the other hand is not copied when assigned to a new variable or constant , or when passed into a function
 Rather than a copy, a reference to the existing instance is used.
 ___________________________________________
- */
+*/
