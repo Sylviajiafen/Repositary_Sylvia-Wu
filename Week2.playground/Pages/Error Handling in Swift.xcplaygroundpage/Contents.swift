@@ -5,7 +5,6 @@ enum GuessNumberGameError: Error {
 
 
 class ​GuessNumerGame {
-
     var targetNumber: Int = 10
     
     func guess(number: Int?) throws {
@@ -16,4 +15,10 @@ class ​GuessNumerGame {
     }
 }
 
+let someGuess = ​GuessNumerGame()
 
+let guessANumber = try someGuess.guess(number: 20)
+let guessRight = try someGuess.guess(number: 10)
+
+// Why didn't the String "Guess the right number: ​\(targetNumber)" shows?
+// What's the meaning of "Constant 'guessRight' inferred to have type '()', which may be unexpected"?
