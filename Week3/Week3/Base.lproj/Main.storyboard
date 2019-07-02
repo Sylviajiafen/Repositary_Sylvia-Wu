@@ -35,6 +35,9 @@
                                     <segment title="Sign up"/>
                                 </segments>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="logInAndSignUp" destination="BYZ-38-t0r" eventType="valueChanged" id="Dt3-Dt-buq"/>
+                                </connections>
                             </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v9Q-in-iU2">
                                 <rect key="frame" x="60" y="316" width="255" height="125"/>
@@ -83,6 +86,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="UeM-7L-Hne"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q96-np-MJR">
                                         <rect key="frame" x="8" y="2" width="63.5" height="39"/>
@@ -122,6 +128,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="bottonOfLogOrSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RQM-ep-qtu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -138,11 +147,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="LoginSegmented" destination="leg-t7-A8T" id="wfP-xX-fZH"/>
-                        <outlet property="accountText" destination="gAl-fn-Mb7" id="A8P-Yw-YKb"/>
-                        <outlet property="botton" destination="Nr8-5r-qCn" id="fGc-CY-3vV"/>
-                        <outlet property="checkText" destination="IOh-K9-zIo" id="T1G-tS-UGK"/>
-                        <outlet property="passwordText" destination="IOh-K9-zIo" id="cgI-aw-ySM"/>
+                        <outlet property="accountText" destination="4Qi-Ar-q36" id="igT-qT-MP9"/>
+                        <outlet property="button" destination="Nr8-5r-qCn" id="r24-Pa-fhB"/>
+                        <outlet property="checkText" destination="IOh-K9-zIo" id="hkA-Mx-17R"/>
+                        <outlet property="loginSegmented" destination="leg-t7-A8T" id="YNI-jS-axT"/>
+                        <outlet property="password" destination="gAl-fn-Mb7" id="r7h-04-eqh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
